@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke">
+    <test name="Login Page Test">
+        <classes>
+            <class name="nautopart.tests.LoginPageTest"></class>
+        </classes>
+    </test>
+    <test name="Checkout First Step Test">
+        <classes>
+            <class name="nautopart.tests.CheckoutFirstStepPageTest"></class>
+        </classes>
+    </test>
+    <test name="Checkout Second Step Test">
+        <classes>
+            <class name="nautopart.tests.CheckoutSecondStepTest"></class>
+        </classes>
+    </test>
+</suite>
