@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class CheckoutFirstStepPageTest extends BaseTest{
+public class CheckoutFirstStepTest extends BaseTest{
 
     private CheckoutFirstStepPageService checkoutFirstStepPageService;
 
