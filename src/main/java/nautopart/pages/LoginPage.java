@@ -2,6 +2,10 @@ package nautopart.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage extends BasePage{
 
@@ -16,10 +20,13 @@ public class LoginPage extends BasePage{
 
     public LoginPage openPage(String url){
         driver.get(url);
+
         return this;
     }
 
     public LoginPage fillUsernameField(String userName){
+        waitVisibilityOf(username);
+        //waitVisibilityOf(username).clear;
         username.clear();
         username.sendKeys(userName);
         return this;
@@ -32,6 +39,8 @@ public class LoginPage extends BasePage{
     }
 
     public void clickOnLoginButton(){
+        waitToClickable(loginButton);
+        //waitToClickable(loginButton).click();
         loginButton.click();
     }
 
