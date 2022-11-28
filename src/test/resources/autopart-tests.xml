@@ -12,9 +12,9 @@
             <class name="nautopart.tests.CheckoutSecondStepTest"></class>
         </classes>
     </test>
-    <test name="First Step test">
+    <test name="Login test">
         <classes>
-            <class name="nautopart.tests.CheckoutFirstStepTest"></class>
+            <class name="nautopart.tests.LoginPageTest"></class>
         </classes>
     </test>
 </suite>
