@@ -13,7 +13,7 @@ public abstract class BasePage {
 
     protected final static int WAIT_TIMEOUT_SECONDS = 10;
 
-    protected WebDriver driver = DriverSingleton.getDriver();
+    protected WebDriver driver = DriverSingleton.getInstance().getDriver();
 
     protected BasePage() {
         PageFactory.initElements(driver, this);

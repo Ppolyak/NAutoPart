@@ -1,5 +1,6 @@
 package nautopart.tests;
 
+import io.qameta.allure.Description;
 import nautopart.model.User;
 import nautopart.services.CheckoutFirstStepPageService;
 import org.testng.Assert;
@@ -16,12 +17,14 @@ public class CheckoutFirstStepTest extends BaseTest{
     }
 
     @Test
+    @Description("Checkout first step")
     public void checkoutFirstStepTest(){
         User user = new User();
         boolean actualContinueButton = checkoutFirstStepPageService.checkoutContinue(user)
                 .isFinishButton();
         boolean expectedResult = true;
-        Assert.assertEquals(actualContinueButton,expectedResult, "No button");
+        Assert.assertTrue(actualContinueButton, "No button");/*
+        Assert.assertEquals(actualContinueButton,expectedResult, "No button");*/
     }
 
 }

@@ -1,11 +1,13 @@
 package nautopart.tests;
 
+import io.qameta.allure.Description;
 import nautopart.model.User;
 import nautopart.services.CheckoutFirstStepPageService;
 import nautopart.services.CheckoutSecondStepService;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class CheckoutSecondStepTest extends BaseTest{
 
@@ -17,6 +19,7 @@ public class CheckoutSecondStepTest extends BaseTest{
     }
 
     @Test
+    @Description("Checkout second step")
     public void secondStepTest(){
         User user = new User();
         String actualResult = checkoutSecondStepService
