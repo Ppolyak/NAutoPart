@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Auto-part">
+    <test name="First Step test">
+        <classes>
+            <class name="nautopart.tests.CheckoutFirstStepTest"></class>
+        </classes>
+    </test>
+    <test name="Second Step test">
+        <classes>
+            <class name="nautopart.tests.CheckoutSecondStepTest"></class>
+        </classes>
+    </test>
+</suite>
