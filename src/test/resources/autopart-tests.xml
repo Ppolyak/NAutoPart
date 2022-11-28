@@ -12,7 +12,7 @@
             <class name="nautopart.tests.CheckoutSecondStepTest"></class>
         </classes>
     </test>
-    <test name="Second Step test">
+    <test name="First Step test">
         <classes>
             <class name="nautopart.tests.CheckoutFirstStepTest"></class>
         </classes>
