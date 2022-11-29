@@ -17,6 +17,8 @@ pipeline {
 
                 // To run Maven on a Windows agent, use
                 bat "mvn -Dmaven.test.failure.ignore=true -Dbrowser=chrome -Dsurefire.suiteXmlFiles=src/test/resources/autopart-tests.xml clean test"
+
+                //-Dbrowser=chrome -Dsurefire.suiteXmlFiles=src\test\resources\autopart-tests.xml clean test
             }
 
             post {
@@ -37,10 +39,10 @@ pipeline {
                          properties: [],
                          reportBuildPolicy: 'ALWAYS',
                          results: [[path: 'target/allure-results']]
-                                                                ])
-                        }
-                    }
-            }
+                    ])
+                }
+             }
+        }
     }
 }
 
