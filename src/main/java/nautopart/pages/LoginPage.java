@@ -1,5 +1,6 @@
 package nautopart.pages;
 
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -7,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+@Log4j2
 public class LoginPage extends BasePage{
 
     @FindBy(xpath = "//input[@id='user-name']")
@@ -41,6 +43,7 @@ public class LoginPage extends BasePage{
     public void clickOnLoginButton(){
         waitToClickable(loginButton);
         //waitToClickable(loginButton).click();
+        log.info("Press on log in button");
         loginButton.click();
     }
 

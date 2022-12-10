@@ -1,5 +1,12 @@
 package nautopart.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     private String login = "standard_user";
@@ -8,8 +15,6 @@ public class User {
     private String lastname = "Lastname";
     private String zipPostal = "zipPostal";
 
-    public User() {
-    }
 
     public User(String login, String password) {
         this.login = login;
@@ -22,7 +27,7 @@ public class User {
         this.zipPostal = zipPostal;
     }
 
-    public String getLogin() {
+    /*public String getLogin() {
         return login;
     }
 
@@ -60,5 +65,5 @@ public class User {
 
     public void setZipPostal(String zipPostal) {
         this.zipPostal = zipPostal;
-    }
+    }*/
 }
